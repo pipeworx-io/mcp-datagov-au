@@ -1,19 +1,21 @@
-# mcp-datagov-au
+# @pipeworx/datagov-au
 
-data.gov.au MCP — Australia open-data CKAN catalogue.
+[data.gov.au](https://data.gov.au) MCP — Australia's national open-data catalogue (CKAN). Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search` | CKAN package_search. |
-| `package` | Single package (dataset) by id or name. |
-| `organizations` | List publishing organizations. |
-| `groups` | List themes (groups). |
-| `tags` | List or search tags. |
-| `resource` | Single resource (downloadable file) by id. |
+- `search(query, fq?, rows?, start?, sort?)` — CKAN package_search
+- `package(id)` — package_show by id or name
+- `organizations(limit?)` — list publishing organizations
+- `groups(limit?)` — list themes/groups
+- `tags(limit?, query?)` — list/search tags
+- `resource(id)` — single resource (file) by id
+
+## Data source
+
+`https://data.gov.au/data/api/3/`
 
 ## Quick Start
 
@@ -29,7 +31,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -53,7 +55,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License

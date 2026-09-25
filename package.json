@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datagov-au",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "data.gov.au MCP — Australia open-data CKAN catalogue.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-f6a6dad7b78380528848e30be0b2c0cbdd30f250e8869b56ee9288c097e18735",
-    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
+    "sourceHash": "v1-acb005c128e4ac37f8a4a6d310b3989da877c6b2fcb555e68077e1bf9d554080",
+    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
   }
 }

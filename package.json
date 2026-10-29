@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-datagov-au",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "data.gov.au MCP — Australia open-data CKAN catalogue.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-datagov-au": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datagov-au"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-datagov-au.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/datagov-au",
   "pipeworx": {
-    "sourceHash": "v1-f465f324b70380c1a36542dce0ebcd404478d77c734d1061e6a90e8f72502d36",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "datagov-au",
+    "gatewaySlug": "datagov-au",
+    "sourceHash": "v1-d7630f297b84a8977ad418cf68079ccede6229def8c287ca55aa97f427c1c2af",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
